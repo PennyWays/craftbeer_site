@@ -1,0 +1,29 @@
+.catalog-card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-wrapper img {
+  width: 125px;
+  height: 125px;
+}
+
+.catalog {
+  max-width: 55% !important;
+  justify-content: center;
+}
+
+.catalog-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
