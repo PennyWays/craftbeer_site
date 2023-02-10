@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 800px;
   width: 100%;
   background-color: white;
 }
