@@ -22,9 +22,9 @@ class Products {
             <img src="${element["img"]}" alt="" />
           </div>
           <div class="text-wrapper">
-            <p>
+            <a href="#" class="catalog-title">
                 ${element["name"]}
-            </p>
+            </a>
           </div>
         </div>
       `;
