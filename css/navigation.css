@@ -24,7 +24,14 @@ header {
   justify-content: center;
   background-color: black;
   margin-top: 20px;
+  position: sticky;
+  top: 0px;
 }
+
+.nav-bar-wrapper{
+  
+}
+
 
 .navigation h1 {
   margin-top: 20px;
@@ -46,6 +53,8 @@ header {
 }
 
 .nav li {
+  position: sticky;
+  top: 0px;
   margin: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -60,6 +69,8 @@ header {
 }
 
 .nav-button {
+  position: sticky;
+  top: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bolder;

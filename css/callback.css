@@ -6,6 +6,7 @@
   width: 100%;
   justify-content: center;
   height: 300px;
+  margin-bottom: 200px;
 }
 
 .callback-wrapper {
@@ -23,6 +24,7 @@
 
 .callback-name-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
