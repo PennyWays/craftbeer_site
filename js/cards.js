@@ -1,4 +1,4 @@
-const Cards = [
+const objects_cards = [
   {
     id: 1,
     name: "APA",
@@ -75,3 +75,32 @@ const Cards = [
     img: "img/Wheat beer.jpg",
   },
 ];
+
+
+
+const ROOT_Catalog = document.getElementById("catalog-wrapper");
+
+class Cards {
+  render() {
+    let htmlCatalog = "";
+    objects_cards.forEach((element) => {
+      htmlCatalog += `
+        <div class="catalog-card">
+          <div class="image-wrapper">
+            <img src="${element["img"]}" alt="" />
+          </div>
+          <div class="text-wrapper">
+            <a href="catalog.html" class="catalog-title">
+                ${element["name"]}
+            </a>
+          </div>
+        </div>
+      `;
+      ROOT_Catalog.innerHTML = htmlCatalog;
+    });
+  }
+}
+
+
+const cards = new Cards();
+cards.render();

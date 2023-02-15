@@ -5,8 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Каталог</title>
 	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+  <link rel="stylesheet" href="css/catalog.css" />
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/adress.css">
+  <link rel="stylesheet" type="text/css" href="css/products.css">
+  <link rel="stylesheet" href="css/jquery.modal.min.css" />
 </head>
 <body>
 	<header>
@@ -20,7 +23,11 @@
             placeholder="Поиск..." />
         </div>
 
-        <div class="nav-bar">
+        
+      </div>
+    </header>
+
+    <div class="nav-bar">
           <div class="nav-wrapper">
             <ul class="nav">
               <div class="first-card-wrapper">
@@ -43,11 +50,27 @@
             </ul>
           </div>
         </div>
-      </div>
-    </header>
 
-    <section class="main">
-    	<div></div>
+    <div class="catalog" id="catalog" style="display: none">
+      <div class="catalog-title-wrapper">
+        <h1 class="catalog-title">Каталог</h1>
+      </div>
+      <div class="modal-wrapper" id="catalog-wrapper"></div>
+    </div>
+
+
+    <section class="products">
+    	<div class="products-cards-wrapper" id="products">
+        
+      </div>
+
+      <div class="products-nav-ul">
+        <ul class="products-nav">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+      </div>
     </section>
 
     <footer>
@@ -60,5 +83,10 @@
     </footer>
 
 
+    <script src="js/jquery-min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+    <script type="text/javascript" src="js/cards.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/products.js"></script>
 </body>
 </html>
